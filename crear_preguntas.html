@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Preguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crear tu Pregunta</h1>
+    <form id="formulario-pregunta">
+        <label for="pregunta">Escribe tu pregunta:</label><br>
+        <input type="text" id="pregunta" name="pregunta" required><br><br>
+
+        <label for="respuesta1">Opción 1 (Correcta):</label><br>
+        <input type="text" id="respuesta1" name="respuesta1" required><br><br>
+
+        <label for="respuesta2">Opción 2:</label><br>
+        <input type="text" id="respuesta2" name="respuesta2" required><br><br>
+
+        <label for="respuesta3">Opción 3:</label><br>
+        <input type="text" id="respuesta3" name="respuesta3" required><br><br>
+
+        <label for="respuesta4">Opción 4:</label><br>
+        <input type="text" id="respuesta4" name="respuesta4" required><br><br>
+
+        <label for="respuesta5">Opción 5:</label><br>
+        <input type="text" id="respuesta5" name="respuesta5" required><br><br>
+
+        <button type="submit">Guardar Pregunta</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="crear_preguntas.js"></script>
+</body>
+</html>

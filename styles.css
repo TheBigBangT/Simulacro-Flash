@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Color de fondo pastel */
+    color: #333;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h3 {
+    text-align: center;
+    color: #4a4a4a; /* Tono suave */
+}
+
+/* Formulario y secciones */
+form, .preguntas {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    max-width: 600px;
+    margin: 20px auto; /* Centrado */
+}
+
+/* Etiquetas de campos */
+label {
+    font-size: 16px;
+    color: #6b6b6b;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo de los inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+/* Inputs grandes y que crecen conforme escribes */
+input[type="text"]:focus {
+    border-color: #b0d7ff; /* Color de enfoque pastel */
+}
+
+input[type="text"] {
+    resize: vertical;
+    min-height: 40px; /* Altura mínima para campos de texto */
+    overflow: auto; /* Para habilitar scroll si es necesario */
+}
+
+/* Botones */
+button {
+    background-color: #85c1e9; /* Azul pastel */
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #64b5f6; /* Tono más fuerte para hover */
+}
+
+/* Puntuación */
+#puntuacion {
+    font-size: 24px;
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo de las preguntas */
+#preguntas div {
+    background-color: #fafafa; /* Color pastel muy suave */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+#preguntas button {
+    background-color: #a2d5c6; /* Verde pastel para botones */
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#preguntas button:hover {
+    background-color: #88c9b0; /* Tono más fuerte para hover */
+}
+
+/* Resultados */
+#resultado h3 {
+    color: #88c9b0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
