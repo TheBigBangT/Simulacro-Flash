@@ -110,3 +110,4 @@ document.getElementById('validar').addEventListener('click', function() {
         }
     });
 });
+
