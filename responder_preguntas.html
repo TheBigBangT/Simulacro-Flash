@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responder Preguntas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Responde las Preguntas</h1>
-    <button onclick="window.location.href='index.html'" style="display: block; margin: 0 auto 20px; padding: 10px 20px; background-color: #85c1e9; color: white; border: none; border-radius: 5px; cursor: pointer;">Ir a crear preguntas</button>
-    <div id="preguntas">
+    <div id="info">
+        <p id="puntuacion">Puntuación: 0</p>
+        <p id="temporizador">Tiempo restante: 5:00</p>
+    </div>
+    <div id="preguntas"></div>
     <button id="siguiente">Siguiente</button>
-    <div id="resultado"></div>
-    <div id="puntuacion">Puntuación: 0</div>
 
-    <h2>Práctica de Preguntas Incorrectas</h2>
+    <h2>Práctica con preguntas incorrectas</h2>
     <div id="practica"></div>
     <button id="validar" style="display:none;">Validar Respuesta</button>
-    
+
     <script src="responder_preguntas.js"></script>
 </body>
 </html>
