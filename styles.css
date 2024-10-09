@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3f0ff; /* Color de fondo pastel en tono lila claro */
+    background-color: #f3f4fb; /* Color de fondo pastel */
     color: #333;
     margin: 20px;
     padding: 0;
@@ -10,11 +10,11 @@ body {
 /* Encabezados */
 h1, h3 {
     text-align: center;
-    color: #5c4f8b; /* Tono suave de violeta */
+    color: #6a1b9a; /* Tono violeta suave */
 }
 
 /* Formulario y secciones */
-form, .preguntas {
+form, .preguntas, .practica {
     background-color: #ffffff; /* Fondo blanco para contraste */
     padding: 20px;
     border-radius: 10px;
@@ -26,7 +26,7 @@ form, .preguntas {
 /* Etiquetas de campos */
 label {
     font-size: 16px;
-    color: #7a6c9b; /* Tono más suave de violeta */
+    color: #6b6b6b;
     margin-bottom: 5px;
     display: block;
 }
@@ -40,7 +40,7 @@ input[type="text"] {
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #f9f5ff; /* Color pastel lila claro para inputs */
+    background-color: #f9f9f9;
     color: #333;
     transition: border-color 0.3s;
     outline: none;
@@ -48,7 +48,7 @@ input[type="text"] {
 
 /* Inputs grandes y que crecen conforme escribes */
 input[type="text"]:focus {
-    border-color: #ab8ed9; /* Color de enfoque lila */
+    border-color: #b0d7ff; /* Color de enfoque pastel */
 }
 
 input[type="text"] {
@@ -59,7 +59,7 @@ input[type="text"] {
 
 /* Botones */
 button {
-    background-color: #8c7ae6; /* Lila pastel */
+    background-color: #8e24aa; /* Violeta pastel */
     color: white;
     padding: 12px;
     border: none;
@@ -71,39 +71,39 @@ button {
 }
 
 button:hover {
-    background-color: #7d5fff; /* Tono más fuerte para hover */
+    background-color: #7b1fa2; /* Tono más fuerte para hover */
 }
 
 /* Puntuación */
 #puntuacion {
     font-size: 24px;
-    color: #5c4f8b; /* Tono de violeta */
+    color: #6a1b9a;
     text-align: center;
     margin-top: 20px;
 }
 
 /* Estilo de las preguntas */
-#preguntas div {
-    background-color: #f5f3ff; /* Color pastel lila muy suave */
-    border-radius: 5px;
+#preguntas div, .practica div {
+    background-color: #e1bee7; /* Color pastel suave */
+    border-radius: 8px; /* Bordes redondeados */
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
 }
 
-#preguntas button {
-    background-color: #a29bfe; /* Violeta pastel para botones */
+#preguntas button, #practica button {
+    background-color: #ce93d8; /* Violeta pastel para botones */
     margin-right: 5px;
     margin-bottom: 5px;
 }
 
-#preguntas button:hover {
-    background-color: #9b88e3; /* Tono más fuerte para hover */
+#preguntas button:hover, #practica button:hover {
+    background-color: #ba68c8; /* Tono más fuerte para hover */
 }
 
 /* Resultados */
 #resultado h3 {
-    color: #8c7ae6; /* Color de texto violeta */
+    color: #6a1b9a;
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
