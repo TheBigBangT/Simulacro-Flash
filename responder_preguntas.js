@@ -6,7 +6,6 @@ let temporizador; // Variable para el temporizador
 let tiempoRestante = tiempoLimite; // Almacenar tiempo restante
 let preguntasIncorrectas = []; // Almacena preguntas incorrectas
 let conteoIncorrectas = {}; // Almacena cuántas veces se respondió mal
-let indicePreguntaIncorrecta = 0;
 
 // Función para mezclar preguntas aleatoriamente
 function mezclarPreguntas(array) {
@@ -29,14 +28,14 @@ function mostrarPreguntas() {
 
             preguntaDiv.innerHTML = `<h3>${preguntaObj.pregunta}</h3>`;
             preguntaObj.respuestas.forEach((respuesta) => {
-                preguntaDiv.innerHTML += `<label><input type="radio" name="respuesta" value="${respuesta}"> ${respuesta}</label><br>`;
+                preguntaDiv.innerHTML += `<label><input type="radio" name="respuesta${indicePreguntaActual}" value="${respuesta}"> ${respuesta}</label><br>`;
             });
             contenedorPreguntas.appendChild(preguntaDiv);
             indicePreguntaActual++;
         }
     }
 
-    if (indicePreguntaActual === preguntas.length) {
+    if (indicePreguntaActual >= preguntas.length) {
         document.getElementById('siguiente').style.display = 'none';
         alert("Has respondido todas las preguntas.");
     }
@@ -60,9 +59,10 @@ function iniciarTemporizador() {
 
 // Función para puntuar las respuestas
 function puntuarPreguntas() {
-    const respuestasSeleccionadas = document.querySelectorAll('input[name="respuesta"]:checked');
+    const respuestasSeleccionadas = document.querySelectorAll('input[type="radio"]:checked');
+
     respuestasSeleccionadas.forEach((respuesta) => {
-        const preguntaIndex = Math.floor(indicePreguntaActual / 3) - 1; // Indice correcto
+        const preguntaIndex = parseInt(respuesta.name.replace('respuesta', ''), 10);
         if (respuesta.value === preguntas[preguntaIndex].respuestaCorrecta) {
             puntos++;
         } else {
