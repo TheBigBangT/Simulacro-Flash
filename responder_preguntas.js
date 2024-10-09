@@ -64,10 +64,13 @@ function puntuarPreguntas() {
     respuestasSeleccionadas.forEach((respuesta) => {
         const preguntaIndex = parseInt(respuesta.name.replace('respuesta', ''), 10);
         if (respuesta.value === preguntas[preguntaIndex].respuestaCorrecta) {
-            puntos++;
+            puntos += 5; // Sumar 5 puntos por respuesta correcta
+            alert(`¡Correcto! Has ganado 5 puntos. Respuesta: ${respuesta.value}`);
         } else {
+            puntos -= 3; // Restar 3 puntos por respuesta incorrecta
             preguntasIncorrectas.push(preguntas[preguntaIndex]);
             conteoIncorrectas[preguntas[preguntaIndex].pregunta] = (conteoIncorrectas[preguntas[preguntaIndex].pregunta] || 0) + 1;
+            alert(`Incorrecto. Has perdido 3 puntos. La respuesta correcta era: ${preguntas[preguntaIndex].respuestaCorrecta}`);
         }
     });
 
@@ -110,4 +113,3 @@ document.getElementById('validar').addEventListener('click', function() {
         }
     });
 });
-
