@@ -13,7 +13,7 @@ document.getElementById('formulario-pregunta').addEventListener('submit', functi
     const respuestaCorrecta = respuestas[0];  // La primera opción es la correcta.
 
     // Guardar preguntas en localStorage
-    let preguntasGuardadas = JSON.parse(localStorage.getItem('preguntas')) || [];
+    const preguntasGuardadas = JSON.parse(localStorage.getItem('preguntas')) || [];
     preguntasGuardadas.push({ pregunta, respuestas, respuestaCorrecta });
     localStorage.setItem('preguntas', JSON.stringify(preguntasGuardadas));
 
