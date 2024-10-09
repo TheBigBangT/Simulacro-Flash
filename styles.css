@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Color de fondo pastel */
+    background-color: #f3f0ff; /* Color de fondo pastel en tono lila claro */
     color: #333;
     margin: 20px;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 /* Encabezados */
 h1, h3 {
     text-align: center;
-    color: #4a4a4a; /* Tono suave */
+    color: #5c4f8b; /* Tono suave de violeta */
 }
 
 /* Formulario y secciones */
@@ -18,7 +18,7 @@ form, .preguntas {
     background-color: #ffffff; /* Fondo blanco para contraste */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     max-width: 600px;
     margin: 20px auto; /* Centrado */
 }
@@ -26,7 +26,7 @@ form, .preguntas {
 /* Etiquetas de campos */
 label {
     font-size: 16px;
-    color: #6b6b6b;
+    color: #7a6c9b; /* Tono más suave de violeta */
     margin-bottom: 5px;
     display: block;
 }
@@ -40,7 +40,7 @@ input[type="text"] {
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #f9f9f9;
+    background-color: #f9f5ff; /* Color pastel lila claro para inputs */
     color: #333;
     transition: border-color 0.3s;
     outline: none;
@@ -48,7 +48,7 @@ input[type="text"] {
 
 /* Inputs grandes y que crecen conforme escribes */
 input[type="text"]:focus {
-    border-color: #b0d7ff; /* Color de enfoque pastel */
+    border-color: #ab8ed9; /* Color de enfoque lila */
 }
 
 input[type="text"] {
@@ -59,7 +59,7 @@ input[type="text"] {
 
 /* Botones */
 button {
-    background-color: #85c1e9; /* Azul pastel */
+    background-color: #8c7ae6; /* Lila pastel */
     color: white;
     padding: 12px;
     border: none;
@@ -71,20 +71,20 @@ button {
 }
 
 button:hover {
-    background-color: #64b5f6; /* Tono más fuerte para hover */
+    background-color: #7d5fff; /* Tono más fuerte para hover */
 }
 
 /* Puntuación */
 #puntuacion {
     font-size: 24px;
-    color: #4a4a4a;
+    color: #5c4f8b; /* Tono de violeta */
     text-align: center;
     margin-top: 20px;
 }
 
 /* Estilo de las preguntas */
 #preguntas div {
-    background-color: #fafafa; /* Color pastel muy suave */
+    background-color: #f5f3ff; /* Color pastel lila muy suave */
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
@@ -92,18 +92,18 @@ button:hover {
 }
 
 #preguntas button {
-    background-color: #a2d5c6; /* Verde pastel para botones */
+    background-color: #a29bfe; /* Violeta pastel para botones */
     margin-right: 5px;
     margin-bottom: 5px;
 }
 
 #preguntas button:hover {
-    background-color: #88c9b0; /* Tono más fuerte para hover */
+    background-color: #9b88e3; /* Tono más fuerte para hover */
 }
 
 /* Resultados */
 #resultado h3 {
-    color: #88c9b0;
+    color: #8c7ae6; /* Color de texto violeta */
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
