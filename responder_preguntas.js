@@ -4,12 +4,12 @@ function cargarPreguntas() {
     const preguntas = JSON.parse(localStorage.getItem('preguntas')) || [];
     const preguntasDiv = document.getElementById('preguntas');
 
-    preguntas.forEach((preguntaObj, index) => {
+    preguntas.forEach((preguntaObj) => {
         const preguntaDiv = document.createElement('div');
         preguntaDiv.innerHTML = `<h3>${preguntaObj.pregunta}</h3>`;
 
         // Crear botones para cada opción de respuesta
-        preguntaObj.respuestas.forEach((respuesta, i) => {
+        preguntaObj.respuestas.forEach((respuesta, _i) => {
             const boton = document.createElement('button');
             boton.innerText = respuesta;
             boton.addEventListener('click', function() {
@@ -39,6 +39,5 @@ function verificarRespuesta(respuestaSeleccionada, respuestaCorrecta, boton) {
 }
 
 // Cargar las preguntas cuando la página se cargue
-window.onload = cargarPreguntas;
-
+globalThis.onload = cargarPreguntas;
 
